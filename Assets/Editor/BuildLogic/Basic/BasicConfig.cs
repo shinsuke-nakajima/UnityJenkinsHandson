@@ -121,12 +121,6 @@ namespace Assets.Editor.BuildLogic.Basic
                 EditorUserBuildSettings.SwitchActiveBuildTarget((Target) BuildTarget.Value);
             }
 
-            Symbol.Toggle("ENABLE_DEBUG_FOLDER", EnableDebugDirectory.Value);
-            if(!EnableDebugDirectory.Value)
-            {
-                FileUtil.DeleteFileOrDirectory("Assets/Debug");
-            }
-
         }
     }
 }
